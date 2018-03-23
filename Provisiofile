@@ -99,7 +99,7 @@
     export IMPORT_FROM=/tmp/map-data
     export IMPORT_FILE=merged.osm.pbf
     pushd "$CODE_REPO_PATH"
-        docker-compose -f docker-compose-importer.yml run --rm data-importer
+        docker-compose -f docker-compose.yml -f docker-compose-importer.yml run --rm data-importer
     popd
     sleep 1s
 #end
