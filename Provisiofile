@@ -106,6 +106,7 @@
 
 #task restart_tile_server always
     systemctl restart tile-server.service
+    sleep 5s
 #end
 
 #task clear_cached_tiles always unless NO_MAP_IMPORT
